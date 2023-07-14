@@ -1,4 +1,4 @@
-export const AboutUs = () => {
+const AboutUs = () => {
     return (
         <>
             <div className="container">
@@ -22,3 +22,5 @@ export const AboutUs = () => {
         </>
     )
 }
+
+export default AboutUs

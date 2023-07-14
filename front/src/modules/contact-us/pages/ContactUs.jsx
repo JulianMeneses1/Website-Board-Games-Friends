@@ -1,7 +1,7 @@
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 
-export const ContactUs = () => {
+const ContactUs = () => {
 
     { defineElement(lottie.loadAnimation)}
     
@@ -119,3 +119,6 @@ export const ContactUs = () => {
         </>
     )
 }
+
+
+export default ContactUs

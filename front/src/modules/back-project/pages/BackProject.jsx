@@ -1,4 +1,4 @@
-export const BackProject = () => {
+const BackProject = () => {
     return (
         <>
             <div className="container">
@@ -38,3 +38,5 @@ export const BackProject = () => {
         </>
     )
 }
+
+export default BackProject

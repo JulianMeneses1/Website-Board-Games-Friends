@@ -1,6 +1,6 @@
 import styles from "../../../styles/Home.module.css"
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <div className="container">
@@ -26,3 +26,5 @@ export const Home = () => {
         </>
     )
 }
+
+export default Home

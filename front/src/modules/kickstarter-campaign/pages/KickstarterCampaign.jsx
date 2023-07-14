@@ -1,6 +1,11 @@
 import { useState } from "react";
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
 
-export const KickstarterCampaign = () => {
+
+const KickstarterCampaign = () => {
+
+  { defineElement(lottie.loadAnimation)}
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -14,9 +19,18 @@ export const KickstarterCampaign = () => {
 
             {!imageLoaded && (
          
-            <div style={{height:"90vh"}} className="d-flex align-items-center justify-content-center">
-                <div className="spinner-border text-primary" role="status">
-                </div>
+            <div style={{height:"60vh"}} className="d-flex align-items-center justify-content-center">
+                <lord-icon
+                    src="https://cdn.lordicon.com/pxruxqrv.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style={{width:"150px",height:"150px"}}>
+                </lord-icon>
+                {/* <div style={{height:"90vh"}} className="d-flex align-items-center justify-content-center">
+                    <div className="spinner-border text-primary" role="status">
+                    </div>
+                </div> */}
             </div>
       
         )}
@@ -24,7 +38,9 @@ export const KickstarterCampaign = () => {
 <div className={imageLoaded ? '' : 'hidden'}>
           <img
             className="w-100"
-            src="https://app-board-games-friends.s3.amazonaws.com/BGF-01.webp"
+            // src="https://app-board-games-friends.s3.amazonaws.com/BGF-01.webp"
+            //  src="https://d24f0qbfi4zcos.cloudfront.net/imagecompressor/BGF-06-min.png"
+             src="https://d24f0qbfi4zcos.cloudfront.net/BGF-06.webp"
             onLoad={handleImageLoad}
           />
         </div>
@@ -61,3 +77,5 @@ export const KickstarterCampaign = () => {
         </>
     )
 }
+
+export default KickstarterCampaign

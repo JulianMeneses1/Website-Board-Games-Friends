@@ -1,4 +1,4 @@
-export const StretchGoals = () => {
+const StretchGoals = () => {
     return (
         <>
             <div className="container">
@@ -39,3 +39,5 @@ As we are board game lovers and players as well, this project aims for continuou
         </>
     )
 }
+
+export default StretchGoals

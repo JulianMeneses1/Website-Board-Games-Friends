@@ -1,4 +1,4 @@
-export const FAQ = () => {
+const FAQ = () => {
     return (
         <>
               <div className="container">
@@ -38,3 +38,5 @@ export const FAQ = () => {
         </>
     )
 }
+
+export default FAQ

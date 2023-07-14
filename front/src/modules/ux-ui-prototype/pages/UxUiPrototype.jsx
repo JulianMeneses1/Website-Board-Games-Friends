@@ -1,4 +1,4 @@
-export const UxUiPrototype = () => {
+const UxUiPrototype = () => {
     return (
         <>
             <div className="container">
@@ -18,3 +18,5 @@ export const UxUiPrototype = () => {
         </>
     )
 }
+
+export default UxUiPrototype
