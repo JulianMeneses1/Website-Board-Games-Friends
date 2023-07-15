@@ -19,7 +19,7 @@ const ContactUs = () => {
                                         <lord-icon
                                                 src="https://cdn.lordicon.com/dxjqoygy.json"
                                                 trigger="loop"
-                                                delay="1000"
+                                                delay="750"
                                                 colors="primary:#121331,secondary:#08a88a"
                                                 style={{width:"50px",height:"50px"}}>
                                         </lord-icon>

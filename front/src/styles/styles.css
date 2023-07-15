@@ -3,7 +3,26 @@ body {
   padding-bottom: 8em;
   padding-top: 12em;
   min-height: 100vh;
-  font-family: Lato;
+  font-family: MyriadPro, Lato;
+}
+
+/* Fuentes */
+
+@font-face {
+  font-family: 'Helvetica'; 
+  src: url('../assets/Helvetica.ttc'); 
+}
+@font-face {
+  font-family: 'MyriadPro'; 
+  src: url('../assets/MyriadPro-Regular.otf'); 
+}
+@font-face {
+  font-family: 'HelveticaInserat'; 
+  src: url('../assets/HelveticaInseratLTStd-Roman.otf'); 
+}
+@font-face {
+  font-family: 'Maison'; 
+  src: url('../assets/FontsFree-Net-Maison-Neue-Book.ttf'); 
 }
 
 /* Navbar */

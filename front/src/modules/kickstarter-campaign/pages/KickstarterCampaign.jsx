@@ -19,14 +19,14 @@ const KickstarterCampaign = () => {
 
             {!imageLoaded && (
          
-            <div style={{height:"60vh"}} className="d-flex align-items-center justify-content-center">
-                <lord-icon
+            <div style={{height:"100vh"}} className="d-flex align-items-center justify-content-center">
+                {/* <lord-icon
                     src="https://cdn.lordicon.com/pxruxqrv.json"
                     trigger="loop"
                     delay="1000"
                     colors="primary:#4be1ec,secondary:#cb5eee"
                     style={{width:"150px",height:"150px"}}>
-                </lord-icon>
+                </lord-icon> */}
                 {/* <div style={{height:"90vh"}} className="d-flex align-items-center justify-content-center">
                     <div className="spinner-border text-primary" role="status">
                     </div>

@@ -10,13 +10,26 @@ const UxUiPrototype = lazy(()=>import('../modules/ux-ui-prototype/pages/UxUiProt
 const FAQ = lazy(()=>import('../modules/faq/pages/FAQ'))
 const ContactUs = lazy(()=>import('../modules/contact-us/pages/ContactUs'))
 const StretchGoals = lazy(()=>import('../modules/stretch-goals/pages/StretchGoals'))
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
 
 export const AppRoutes = () => {
-
+    { defineElement(lottie.loadAnimation)}
     return (
         <>
             <Navbar/>
-            <Suspense fallback={null}>
+            <Suspense fallback={ <div style={{height:"100vh"}} className="d-flex align-items-center justify-content-center">
+                <lord-icon
+                    src="https://cdn.lordicon.com/pxruxqrv.json"
+                    trigger="loop"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    style={{width:"150px",height:"150px"}}>
+                </lord-icon>
+                {/* <div style={{height:"90vh"}} className="d-flex align-items-center justify-content-center">
+                    <div className="spinner-border text-primary" role="status">
+                    </div>
+                </div> */}
+            </div>}>
                 <Routes>                
                     <Route path='/' element={ <Home/> } />
                     <Route path='/about-us' element={ <AboutUs/> } />
