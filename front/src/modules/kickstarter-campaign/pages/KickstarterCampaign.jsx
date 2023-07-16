@@ -15,7 +15,7 @@ const KickstarterCampaign = () => {
 
     return (
         <>
-            <div className="container" >
+            <div className="container w-75">
 
             {!imageLoaded && (
          
@@ -36,13 +36,16 @@ const KickstarterCampaign = () => {
         )}
 
 <div className={imageLoaded ? '' : 'hidden'}>
-          <img
-            className="w-100"
-            // src="https://app-board-games-friends.s3.amazonaws.com/BGF-01.webp"
-            //  src="https://d24f0qbfi4zcos.cloudfront.net/imagecompressor/BGF-06-min.png"
-             src="https://d24f0qbfi4zcos.cloudfront.net/BGF-06.webp"
-            onLoad={handleImageLoad}
-          />
+          <div className="d-flex justify-content-center">
+            <img
+                className="w-75"
+                // src="https://app-board-games-friends.s3.amazonaws.com/BGF-01.webp"
+                //  src="https://d24f0qbfi4zcos.cloudfront.net/imagecompressor/BGF-06-min.png"
+                src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-06-min.png`}      
+                onLoad={handleImageLoad}
+            />
+          </div>
+         
         </div>
           
              

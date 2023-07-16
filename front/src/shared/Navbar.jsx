@@ -1,17 +1,34 @@
+import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"
 
 export const Navbar = () => {
 
     const navigate = useNavigate();
+    
+    const [scrollY, setScrollY] = useState(window.scrollY);
+    const [showMenu, setShowMenu] = useState(true);
+    
+    // Función que se activa cada vez que el usuario scrollea, si scrollea hacia abajo se oculta el menú
+    // (clase hide-menu), si scrollea hacia arriba se muestra el menu (clase show-menu)
+    useEffect(() => {  
+        const handleScroll = () => {            
+        if (scrollY < window.scrollY) {
+            setShowMenu(false);
+        } else {
+            setShowMenu(true);
+        }
+        setScrollY(window.scrollY);
+        };    
+        window.addEventListener('scroll', handleScroll);      
+    }, [scrollY]);
 
     return (
         <>
-            <div className="fixed-top">
-                <div className="d-flex justify-content-center" style={{height:"15vh",backgroundColor:"#d4a373"}}>
-                    <img src="https://app-board-games-friends.s3.amazonaws.com/LogoPortada.webp"/>  
-                    <img src="https://app-board-games-friends.s3.amazonaws.com/Presentaci%C3%B3n.webp"/>                    
+            <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
+                <div className="d-flex justify-content-center " style={{height:"93px"}}>
+                    <img src="https://app-board-games-friends.s3.amazonaws.com/LogoPortada.webp"/>                   
                 </div>
-                <nav className="navbar navbar-expand-lg pt-0">                
+                <nav className="navbar navbar-expand-lg p-0" style={{height:"60px"}}>                
                     <div className="container-fluid">
 
                         {/* NAVBAR EXPANDIDO */}
@@ -22,11 +39,11 @@ export const Navbar = () => {
                         </button>
                         <div className="w-100 d-none d-lg-flex">
                            <div className="me-3">
-                             <NavLink className="nav-link" to="/" style={{height:"70px", width:"80px"}}>       
-                                 <img className="w-100 h-100" src="https://app-board-games-friends.s3.amazonaws.com/Logo.webp"/>    
+                             <NavLink className="nav-link mb-3" to="/" style={{height:"60px"}}>       
+                                 <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`} />    
                              </NavLink>
                            </div>
-                            <ul className="navbar-nav d-flex justify-content-between align-items-center pt-2 w-100 me-3">
+                            <ul className="navbar-nav d-flex justify-content-between align-items-center  w-100 me-3">
                                 <li><NavLink className="nav-link" to="about-us">ABOUT US</NavLink></li>
                                 <li><NavLink className="nav-link" to="join-the-kickstarter-campaign">SUPPORT THE KICKSTARTER CAMPAIGN!</NavLink></li>
                                 <li><NavLink className="nav-link" to="ways-to-back-this-project">WAYS TO BACK THIS PROJECT</NavLink></li>
@@ -62,7 +79,7 @@ export const Navbar = () => {
                         </div>          
                     </div>
                 </nav>
-            </div>    
+            </header>    
         </>
        
     )

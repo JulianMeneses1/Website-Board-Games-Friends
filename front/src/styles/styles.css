@@ -1,17 +1,14 @@
 body {
   position: relative;
   padding-bottom: 8em;
-  padding-top: 12em;
+  padding-top: 180px;
   min-height: 100vh;
-  font-family: MyriadPro, Lato;
+  font-family: MyriadPro, Lato, Helvetica;
+  background: linear-gradient(90deg, rgba(250,240,219,1) 0%, rgba(251,213,184,1) 100%);
 }
 
 /* Fuentes */
 
-@font-face {
-  font-family: 'Helvetica'; 
-  src: url('../assets/Helvetica.ttc'); 
-}
 @font-face {
   font-family: 'MyriadPro'; 
   src: url('../assets/MyriadPro-Regular.otf'); 
@@ -27,12 +24,22 @@ body {
 
 /* Navbar */
 
+.show-menu{    
+  transform: translateY(0px);
+  transition: transform 0.4s ease;          
+}
+
+.hide-menu{
+  transform: translateY(-153px);
+  transition: transform 0.4s ease;
+}
+
 nav .navbar-toggler {
   box-shadow: none !important;
 }
 
-nav {
-  background-color: #d4a373;
+header {
+  background-color:#d4a373
 }
 
 nav .nav-link:hover {
