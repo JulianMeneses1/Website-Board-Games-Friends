@@ -28,15 +28,15 @@ export const Navbar = () => {
                 <div className="d-flex justify-content-center " style={{height:"93px"}}>
                     <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
                 </div>
-                <nav className="navbar navbar-expand-lg p-0" style={{height:"60px"}}>                
+                <nav className="navbar navbar-expand-lg p-0" style={{height:"60px"}} >                
                     <div className="container-fluid">
-
-                        {/* NAVBAR EXPANDIDO */}
-                        
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
-                                data-bs-target="#nav" aria-controls="nav" aria-label="Toggle navigation" style={{backgroundColor:"gray"}}>
+                                data-bs-target="#nav" aria-controls="nav" aria-label="Toggle navigation" style={{backgroundColor:"#d4a373"}}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
+
+                        {/* NAVBAR EXPANDIDO */}                       
+                        
                         <div className="w-100 d-none d-lg-flex">
                            <div>
                              <NavLink className="nav-link mb-3" to="/" style={{height:"60px"}}>       
@@ -67,13 +67,13 @@ export const Navbar = () => {
                             </div>
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav">
-                                    <li><NavLink onClick={() =>navigate('about-us')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">ABOUT US</NavLink></li>
-                                    <li><NavLink onClick={() =>navigate('join-the-kickstarter-campaign')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">SUPPORT THE KICKSTARTER CAMPAIGN!</NavLink></li>
-                                    <li><NavLink onClick={() =>navigate('ways-to-back-this-project')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas" >WAYS TO BACK THIS PROJECT</NavLink></li>
-                                    <li><NavLink onClick={() =>navigate('ux-ui-prototype')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">UX UI PROTOTYPE</NavLink></li>
-                                    <li><NavLink onClick={() =>navigate('stretch-goals')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">STRETCH GOALS</NavLink></li>
-                                    <li><NavLink onClick={() =>navigate('faq')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">FAQ</NavLink></li> 
-                                    <li><NavLink onClick={() =>navigate('contact-us')} className="nav-link fs-5 my-2" data-bs-dismiss="offcanvas">CONTACT US</NavLink></li> 
+                                    <li><NavLink onClick={() =>navigate('about-us')} className="nav-link my-2" data-bs-dismiss="offcanvas">ABOUT US</NavLink></li>
+                                    <li><NavLink onClick={() =>navigate('join-the-kickstarter-campaign')} className="nav-link  my-2" data-bs-dismiss="offcanvas">SUPPORT THE KICKSTARTER CAMPAIGN!</NavLink></li>
+                                    <li><NavLink onClick={() =>navigate('ways-to-back-this-project')} className="nav-link  my-2" data-bs-dismiss="offcanvas" >WAYS TO BACK THIS PROJECT</NavLink></li>
+                                    <li><NavLink onClick={() =>navigate('ux-ui-prototype')} className="nav-link  my-2" data-bs-dismiss="offcanvas">UX UI PROTOTYPE</NavLink></li>
+                                    <li><NavLink onClick={() =>navigate('stretch-goals')} className="nav-link  my-2" data-bs-dismiss="offcanvas">STRETCH GOALS</NavLink></li>
+                                    <li><NavLink onClick={() =>navigate('faq')} className="nav-link  my-2" data-bs-dismiss="offcanvas">FAQ</NavLink></li> 
+                                    <li><NavLink onClick={() =>navigate('contact-us')} className="nav-link  my-2" data-bs-dismiss="offcanvas">CONTACT US</NavLink></li> 
                                 </ul>
                             </div>
                         </div>          

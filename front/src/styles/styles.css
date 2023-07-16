@@ -47,6 +47,11 @@ nav .nav-link:hover{
   color:#130303 !important
 }
 
+/*  Para anular el efecto del color negro y el fondo blanco del autollenado de los inputs (en realidad no lo anula sino que pospone su efecto 600000s, o sea 10000 minutos) */
+
+input:-webkit-autofill, input:-webkit-autofill:focus {  
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
 
 @media screen and (max-width: 992px) {
   nav h3 {
@@ -54,11 +59,12 @@ nav .nav-link:hover{
       margin: 0px !important
   }  
   nav .offcanvas {
-      background-color:#B9CFD4;
+      background-color:#d4a373;
       width: 85vw !important;
+      height: 100vh;
   }    
   nav .offcanvas-body .nav-link:hover {
-      color:lightblue !important
+      color:#919191 !important
   }
 }
 

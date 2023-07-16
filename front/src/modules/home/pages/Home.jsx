@@ -30,7 +30,7 @@ const Home = () => {
                         <br/>
                         <b>Why should we spend so much time finding the events that we want to play when we could have a complete and single app made for us?</b>
                     </p>
-                    <img className="w-50" style={{}} src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/casa png-min.png`}   />
+                    <img className="w-50" src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/casa png-min.png`} />
                 </div>
             </div>
         </>
