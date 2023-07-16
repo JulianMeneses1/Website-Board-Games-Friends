@@ -10,7 +10,7 @@ const Home = () => {
                         <p>Video</p>
                     </div>
                 <div className={styles.mainContainer}>
-                    <h4 className="text-center mb-3">Be part of this playful community!</h4>                   
+                    <h3 className="text-center mb-3">Be part of this playful community!</h3>                   
                     <div className="d-flex justify-content-center">
                         <ul>
                             <li style={{fontSize:"17px"}}>Can't you coordinate a spot to play with your regular group of friends?</li>

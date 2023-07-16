@@ -11,7 +11,7 @@ const UxUiPrototype = () => {
                     We just need to develop and use it!
                 </p>
 
-                <img className="w-100" src="https://app-board-games-friends.s3.amazonaws.com/BGF-09.webp"/>  
+                <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-09-min.png`}/>  
 
                 
             </div>

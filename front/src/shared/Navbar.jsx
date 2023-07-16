@@ -26,7 +26,7 @@ export const Navbar = () => {
         <>
             <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
                 <div className="d-flex justify-content-center " style={{height:"93px"}}>
-                    <img src="https://app-board-games-friends.s3.amazonaws.com/LogoPortada.webp"/>                   
+                    <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
                 </div>
                 <nav className="navbar navbar-expand-lg p-0" style={{height:"60px"}}>                
                     <div className="container-fluid">
@@ -38,12 +38,12 @@ export const Navbar = () => {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="w-100 d-none d-lg-flex">
-                           <div className="me-3">
+                           <div>
                              <NavLink className="nav-link mb-3" to="/" style={{height:"60px"}}>       
                                  <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`} />    
                              </NavLink>
                            </div>
-                            <ul className="navbar-nav d-flex justify-content-between align-items-center  w-100 me-3">
+                            <ul className="navbar-nav d-flex justify-content-around align-items-center  w-100 me-3">
                                 <li><NavLink className="nav-link" to="about-us">ABOUT US</NavLink></li>
                                 <li><NavLink className="nav-link" to="join-the-kickstarter-campaign">SUPPORT THE KICKSTARTER CAMPAIGN!</NavLink></li>
                                 <li><NavLink className="nav-link" to="ways-to-back-this-project">WAYS TO BACK THIS PROJECT</NavLink></li>

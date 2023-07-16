@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   font-family: MyriadPro, Lato, Helvetica;
   background: linear-gradient(90deg, rgba(250,240,219,1) 0%, rgba(251,213,184,1) 100%);
+  overflow-x: hidden;
 }
 
 /* Fuentes */
@@ -42,9 +43,10 @@ header {
   background-color:#d4a373
 }
 
-nav .nav-link:hover {
-  color:#828579 !important
+nav .nav-link:hover{
+  color:#130303 !important
 }
+
 
 @media screen and (max-width: 992px) {
   nav h3 {
