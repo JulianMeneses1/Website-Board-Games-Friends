@@ -4,7 +4,7 @@ export const Footer = () => {
     return (   
         <div className={styles.footer}>    
             <h5 className="text-center mb-0">Visit the campaign on 
-                <a className={styles.navLink} href="www.google.com.ar">@KickStarter!</a>
+                <a className={styles.navLink} target="_blank" href="http://www.google.com.ar">@KickStarter!</a>
             </h5>
             <div className="d-flex my-2 gap-3 justify-content-center">
                 <a href="www.google.com.ar" target="_blank" title="Link to our Instagram">
@@ -18,7 +18,7 @@ export const Footer = () => {
                     </svg>
                 </a>
             </div>
-            <p className="text-center mb-0">Designed by <a className="nav-link d-inline" href="https://julian-meneses.web.app/"><b>Julián Meneses</b></a></p>
+            <p className="text-center mb-0">Designed by <a className="nav-link d-inline" target="_blank" href="https://julian-meneses.web.app/"><b>Julián Meneses</b></a></p>
         </div>         
     )
 }

@@ -26,7 +26,7 @@ const AboutUs = () => {
                         </p>
                         <p className='fs-5'>Just a gift for all who enjoy spending time playing and meeting with friends.</p>
                     </div>
-                    <div className="w-50">
+                    <div className="w-50 animate__animated animate__lightSpeedInLeft">
                         <p className="text-center">Foto</p>
                     </div>
                 </div>

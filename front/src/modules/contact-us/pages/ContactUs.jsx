@@ -1,21 +1,50 @@
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import { sendEmail } from '../services/emailService';
+import Swal from "sweetalert2";
+import { useState } from 'react';
+
 
 const ContactUs = () => {
 
     const emailPattern = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/;
 
-    { defineElement(lottie.loadAnimation)}
+    { defineElement(lottie.loadAnimation)};    
 
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
 
-    const watchAllFields = watch();  
+    const watchAllFields = watch(); 
+    
+    const [isLoading, setIsLoading] = useState(false);
 
-    const onSubmit = (()=>{
-        reset()
-    })
+    const onSubmit = (data) =>{
+        setIsLoading(true);
+        const dataEmail = {
+            affair: data.affair,
+            message: `Nombre: ${data.name}
+            \nMensaje: ${data.message}
+            \nCorreo: ${data.email}`
+        }        
+        sendEmail(dataEmail)
+            .then(()=>{
+                Swal.fire(
+                    'Email sent',
+                    'Thanks! We will reply to you as soon as possible',
+                    'success'
+                );
+                setIsLoading(false);  
+                reset();
+            })
+            .catch(()=> {
+                Swal.fire(
+                    'Error',
+                    'Sorry, the email could not be sent, please try again',
+                    'error'
+                );
+                setIsLoading(false);  
+            })
+    };
 
     return (
         <>
@@ -104,8 +133,16 @@ const ContactUs = () => {
                             {errors.message?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                         </div>
                         <div className="row mt-4">
-                            <div className="col text-center">                       
-                                <button type="submit" className="w-50 btn btn-primary">Enviar</button>
+                            <div className="col text-center">                
+                                { isLoading 
+                                    ? <button type="button" className="w-50 btn btn-primary btn-lg ">
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <p className="mb-0">Processing</p>
+                                                <div className="spinner-border text-info me-1" role="status"></div>
+                                            </div>
+                                        </button>
+                                    : <button type="submit" className="w-50 btn btn-lg btn-primary">Enviar</button>
+                                }     
                             </div>                        
                         </div>                                         
                     </form>
