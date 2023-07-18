@@ -4,7 +4,7 @@ body {
   padding-top: 180px;
   min-height: 100vh;
   font-family: MyriadPro, Lato, Helvetica;
-  background: linear-gradient(90deg, rgba(250,240,219,1) 0%, rgba(251,213,184,1) 100%);
+  background-color: #fff6f2;
   overflow-x: hidden;
 }
 
@@ -13,14 +13,6 @@ body {
 @font-face {
   font-family: 'MyriadPro'; 
   src: url('../assets/MyriadPro-Regular.otf'); 
-}
-@font-face {
-  font-family: 'HelveticaInserat'; 
-  src: url('../assets/HelveticaInseratLTStd-Roman.otf'); 
-}
-@font-face {
-  font-family: 'Maison'; 
-  src: url('../assets/FontsFree-Net-Maison-Neue-Book.ttf'); 
 }
 
 /* Navbar */
@@ -40,11 +32,21 @@ nav .navbar-toggler {
 }
 
 header {
-  background-color:#d4a373
+  background-color:#F77F00
+}
+
+.navbar {
+  box-shadow: inset 0 5px 10px 0px #BD5000, 
+            inset 0 -5px 10px 0px #BD5000;
 }
 
 nav .nav-link:hover{
   color:#130303 !important
+}
+
+nav .nav-link{
+  font-size: 17px;
+
 }
 
 /*  Para anular el efecto del color negro y el fondo blanco del autollenado de los inputs (en realidad no lo anula sino que pospone su efecto 600000s, o sea 10000 minutos) */

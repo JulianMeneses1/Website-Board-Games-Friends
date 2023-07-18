@@ -18,18 +18,16 @@ export const AppRoutes = () => {
     return (
         <>
             <Navbar/>
-            <Suspense fallback={ <div style={{height:"100vh"}} className="d-flex align-items-center justify-content-center">
-                <lord-icon
-                    src="https://cdn.lordicon.com/pxruxqrv.json"
-                    trigger="loop"
-                    colors="primary:#4be1ec,secondary:#cb5eee"
-                    style={{width:"150px",height:"150px"}}>
-                </lord-icon>
-                {/* <div style={{height:"90vh"}} className="d-flex align-items-center justify-content-center">
-                    <div className="spinner-border text-primary" role="status">
-                    </div>
-                </div> */}
-            </div>}>
+            <Suspense fallback={
+                <div style={{height:"100vh"}} >
+                    <lord-icon
+                        src="https://cdn.lordicon.com/pxruxqrv.json"
+                        trigger="loop"
+                        colors="primary:#F77F00,secondary:#FFB042"
+                        style={{width:"150px",height:"150px", left:"45%", top:"25%"}}>
+                    </lord-icon>
+                </div>
+                }>
                 <Routes>                
                     <Route path='/' element={ <Home/> } />
                     <Route path='/about-us' element={ <AboutUs/> } />

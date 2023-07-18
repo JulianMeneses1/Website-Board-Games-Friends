@@ -25,10 +25,12 @@ export const Navbar = () => {
     return (
         <>
             <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
-                <div className="d-flex justify-content-center " style={{height:"93px"}}>
-                    <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
-                </div>
-                <nav className="navbar navbar-expand-lg p-0" style={{height:"60px"}} >                
+                <NavLink to="/" >
+                    <div className="d-flex justify-content-center mt-3 " style={{height:"93px"}}>
+                        <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
+                    </div>
+                </NavLink>
+                <nav className="navbar navbar-expand-lg p-0" style={{height:"70px"}} >                
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
                                 data-bs-target="#nav" aria-controls="nav" aria-label="Toggle navigation" style={{backgroundColor:"#d4a373"}}>
@@ -39,11 +41,11 @@ export const Navbar = () => {
                         
                         <div className="w-100 d-none d-lg-flex">
                            <div>
-                             <NavLink className="nav-link mb-3" to="/" style={{height:"60px"}}>       
+                             <NavLink className="nav-link mb-2" to="/" style={{height:"65px"}}>       
                                  <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`} />    
                              </NavLink>
                            </div>
-                            <ul className="navbar-nav d-flex justify-content-around align-items-center  w-100 me-3">
+                            <ul className="navbar-nav pt-2 d-flex justify-content-around align-items-center w-100 me-3">
                                 <li><NavLink className="nav-link" to="about-us">ABOUT US</NavLink></li>
                                 <li><NavLink className="nav-link" to="join-the-kickstarter-campaign">SUPPORT THE KICKSTARTER CAMPAIGN!</NavLink></li>
                                 <li><NavLink className="nav-link" to="ways-to-back-this-project">WAYS TO BACK THIS PROJECT</NavLink></li>

@@ -1,7 +1,24 @@
 .mainContainer {
     margin-top: 2em;
-    padding: 1em;
-    backdrop-filter: blur(10px); 
-    background:  rgb(218, 193, 174);
+    padding: 3em;
+    background:  rgb(252, 236, 227);
     border-radius: 41px; 
-    box-shadow: 0px 0px 50px rgba(187, 144, 84, 0.5)}
+    box-shadow: 0px 0px 10px 3px rgba(202, 174, 138, 1)
+}
+
+.textContainer{
+    width:70%
+}
+
+
+@media screen and (max-width: 1200px) {
+    .textContainer{
+        width:85%
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .textContainer{
+        width:100%
+    }
+}
