@@ -15,7 +15,7 @@ const KickstarterCampaign = () => {
 
     return (
         <>
-            <div className="container w-75">
+            <div className="container">
 
                 {!imageLoaded && (
             
@@ -34,15 +34,18 @@ const KickstarterCampaign = () => {
                         <div className="d-flex justify-content-center">
                             <img
                                 className="w-100"
-                                src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-06-min.png`}      
+                                src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-01-min.png`}      
                                 onLoad={handleImageLoad}
                             />
                         </div>
                 </div>
-                <div className="my-5">
-                    <h3 className="text-center mb-4"><b>Be part of this playful community</b></h3>
+                <div className="d-flex justify-content-center">
+                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-02-min.png`}  /> 
+                </div>                
+                <div style={{marginBottom:"5em"}}>
+                    <h3 className="text-center mt-5 mb-4"><b>Be part of this playful community</b></h3>
                     <div className="d-flex align-items-center">                   
-                        <div className="me-5">
+                        <div className="me-0">
                             <ul>
                                 <li className="fs-5">Can't you coordinate a spot to play with your regular group of friends?</li>
                                 <li className="fs-5">Are you moving to a new neighbourhood or city and want to play with people around?</li>
@@ -50,10 +53,10 @@ const KickstarterCampaign = () => {
                                 <li className="fs-5">Do you want to start a board game campaign and need friends to play it regularly?</li>
                                 <li className="fs-5">Do you prefer not to own many games but join other players and enjoy their collections?</li>
                             </ul>
-                            <p className="m-0 text-center fs-5" >As board games fans we went through all these questions and the emotions behind them.
+                            <p className="m-0 fs-5" >As board games fans we went through all these questions and the emotions behind them.
                             And now we have the opportunity to change these unfulfilled expectations for memorable moments</p>              
                         </div>
-                        <img style={{width:"30%", marginBottom: "1px"}} src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-02.png`}  />                    
+                                           
                     </div>
                 </div>
                 <div>
@@ -70,8 +73,8 @@ const KickstarterCampaign = () => {
                         <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-07-min.png`}/> 
                     </div>
                 </div>
-                <h3 className=" mt-5 mb-3 text-center"><b>A UX UI Experience</b></h3>  
-                <div className="text-center">
+                <h3 className="mt-5 mb-4 text-center"><b>A UX UI Experience</b></h3>  
+                <div className="mb-5">
                     <p className="fs-5">
                         It's been more than a year since we started working on this project. First, we gave shape to the idea to best fit the necessities we saw as board gamers players and then, 
                         tried to convert that idea into a quality and comfortable product.                    
@@ -106,7 +109,7 @@ const KickstarterCampaign = () => {
                 <div className="d-flex justify-content-center align-items-center" style={{height: "300px"}}>
                     <p>Foto Creadores</p>
                 </div>
-                <div className="text-center">
+                <div >
                     <p className="fs-5">
                         We are an Argentinian couple living in Australia. Our professions are social communicator and UX
                         UI designer (Naty) and physicist (Fer). We have travelled and played board games in many
@@ -129,9 +132,10 @@ const KickstarterCampaign = () => {
                 <div className="d-flex justify-content-center"> 
                     <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF-12-min.png`}/> 
                 </div>                          
-                <div className="text-center my-5">
+                <div className="my-5">
+                    <h3 className="mt-5 mb-4 text-center"><b>We think bigger!</b></h3>
                     <p className="fs-5">
-                        We think bigger! We want to grow with the community so our future plans will include improvements and new sections to the app. So all of us can find and join board games events, competitions, personalize sections for board gamers clubs, stores and much more!
+                        We want to grow with the community so our future plans will include improvements and new sections to the app. So all of us can find and join board games events, competitions, personalize sections for board gamers clubs, stores and much more!
                     <br/>
                         And of course we want the Board Games Friends app to be free forever!
                     <br/>

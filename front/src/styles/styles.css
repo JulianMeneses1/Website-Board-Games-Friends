@@ -1,10 +1,11 @@
 body {
   position: relative;
-  padding-bottom: 8em;
-  padding-top: 180px;
+  padding-bottom: 15em;
+  padding-top: 220px;
   min-height: 100vh;
   font-family: MyriadPro, Lato, Helvetica;
   background-color: #fff6f2;
+  text-align: justify;
   overflow-x: hidden;
 }
 
@@ -23,12 +24,17 @@ body {
 }
 
 .hide-menu{
-  transform: translateY(-153px);
+  transform: translateY(-178px);
   transition: transform 0.4s ease;
 }
 
 nav .navbar-toggler {
   box-shadow: none !important;
+  border: none;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.20)  
 }
 
 header {
@@ -36,8 +42,7 @@ header {
 }
 
 .navbar {
-  box-shadow: inset 0 5px 10px 0px #BD5000, 
-            inset 0 -5px 10px 0px #BD5000;
+  box-shadow: inset 0 5px 3px 0px #BD5000, inset 0 -5px 3px 0px #BD5000;
 }
 
 nav .nav-link:hover{
@@ -45,7 +50,25 @@ nav .nav-link:hover{
 }
 
 nav .nav-link{
-  font-size: 17px;
+  font-size: 18px;
+
+}
+
+@media screen and (max-width: 992px) {
+  
+  nav .offcanvas {
+      background-color:#BD5000;
+      width: 85vw !important;
+      height: 100vh;
+  } 
+
+  .navbar {
+    width: 110vw;
+  }
+  
+  nav .offcanvas .nav-link:hover{
+    color:#464545 !important
+  }
 
 }
 
@@ -55,19 +78,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-@media screen and (max-width: 992px) {
-  nav h3 {
-      font-size: 30px !important;
-      margin: 0px !important
-  }  
-  nav .offcanvas {
-      background-color:#d4a373;
-      width: 85vw !important;
-      height: 100vh;
-  }    
-  nav .offcanvas-body .nav-link:hover {
-      color:#919191 !important
-  }
-}
+
 
 

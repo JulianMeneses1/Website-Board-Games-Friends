@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-4 animate__animated animate__zoomIn"><b>Board Games Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
+                <h2 className="text-center mt-2 animate__animated animate__zoomIn"><b>Board Games Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
                 <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"200px"}}>
                         <p>Video</p>
                     </div>
@@ -22,12 +22,11 @@ const Home = () => {
                     </div>                  
                     <div className="d-flex justify-content-center">                            
                         <div className={styles.textContainer}>
-                            <p className="m-0 fs-5" style={{textAlign:"justify"}}>As board games fans we went through all these questions and the emotions behind them.
+                            <p className="m-0 fs-5">As board games fans we went through all these questions and the emotions behind them.
                             And now we have the opportunity to change these unfulfilled expectations for memorable moments</p>
                         </div>
                     </div>
                 </div>
-                
                 <div className="d-flex align-items-center mt-5 mb-3">
                     <p className="align-item-center mb-0 fs-5 text-center">We feel that we need a space for us, for boardgamers. We deserve an app that lets us organize our meetings in the way we want to.
                         Nowadays we have to find information about group meetings jumping from Facebook groups to Meet up, Discord, Whatsapp and whatever source in which you can find a clue for the next possible meeting...
