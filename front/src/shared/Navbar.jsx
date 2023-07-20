@@ -45,7 +45,7 @@ export const Navbar = () => {
                                  <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`} />    
                              </NavLink>
                            </div>
-                            <ul className="navbar-nav pt-1 d-flex justify-content-around align-items-center w-100 me-3">
+                            <ul className="navbar-nav d-flex justify-content-around align-items-center w-100 me-3">
                                 <li><NavLink className="nav-link" to="about-us">About us</NavLink></li>
                                 <li><NavLink className="nav-link" to="join-the-kickstarter-campaign">Support the Kickstarter Campaign!</NavLink></li>
                                 <li><NavLink className="nav-link" to="ways-to-back-this-project">Ways to back this project</NavLink></li>

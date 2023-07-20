@@ -15,7 +15,7 @@ const StretchGoals = () => {
                     </p>
                 </div>
                 <img className="w-100 animate__animated animate__rollIn" src="https://app-board-games-friends.s3.amazonaws.com/SGoals-1.webp"/>  
-                <div className="my-5">
+                <div className="my-5 animate__animated animate__rollIn">
                     <h5><b>Custom notifications</b></h5>
                     <p className="fs-5">
                         Upon reaching this second goal, everyone will gain access to a system for prompt 

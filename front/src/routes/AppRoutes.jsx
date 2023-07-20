@@ -36,11 +36,14 @@ export const AppRoutes = () => {
                     <Route path='/ux-ui-prototype' element={ <UxUiPrototype/> } />
                     <Route path='/stretch-goals' element={ <StretchGoals/> } />
                     <Route path='/faq' element={ <FAQ/> } />
-                    <Route path='/contact-us' element={ <ContactUs/> } />              
+                    <Route path='/contact-us' element={ <ContactUs/> } />   
+                         
                 </Routes>
+         
             </Suspense>
             <Footer/>        
         </>    
     )
 }
+
 

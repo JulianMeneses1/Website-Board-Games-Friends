@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: auto !important;
+}
+
 /* Fuentes */
 
 @font-face {
@@ -46,7 +50,7 @@ header {
 }
 
 nav .nav-link:hover{
-  color:#130303 !important
+  color:#000000 !important
 }
 
 nav .nav-link{

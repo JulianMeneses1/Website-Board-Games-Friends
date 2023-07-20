@@ -5,7 +5,7 @@ import './styles/styles.css'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter>  
     <BGFApp />
-  </BrowserRouter>,
+  </BrowserRouter>
 )
