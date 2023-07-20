@@ -4,7 +4,7 @@ export const Footer = () => {
     return (   
         <div className={styles.footer}>    
             <h5 className="text-center mb-3">Visit the campaign on 
-                <a className={styles.navLink} target="_blank" href="http://www.google.com.ar">@Kickstarter!</a>
+                <a className={styles.navLink} target="_blank" href="http://www.google.com.ar">Kickstarter!</a>
             </h5>
             <div className="d-flex mb-4 gap-3 justify-content-center">
                 <a href="www.google.com.ar" target="_blank" title="Link to our Instagram">

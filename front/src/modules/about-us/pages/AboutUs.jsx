@@ -4,7 +4,7 @@ const AboutUs = () => {
     return (
         <>
             <div className="container">
-            <h2 className="text-center mt-2 animate__animated animate__lightSpeedInLeft">The app designers</h2>                
+                <h2 className="text-center mt-2 animate__animated animate__lightSpeedInLeft">The app designers</h2>                
                 <div className=" my-4"> 
                     <div className="animate__animated animate__lightSpeedInLeft">
                         <p className="text-center">Foto</p>

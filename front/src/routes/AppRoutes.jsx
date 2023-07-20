@@ -19,12 +19,12 @@ export const AppRoutes = () => {
         <>
             <Navbar/>
             <Suspense fallback={
-                <div style={{height:"100vh"}} >
+                <div className="d-flex justify-content-center align-items-center" style={{height:"60vh"}} >
                     <lord-icon
                         src="https://cdn.lordicon.com/pxruxqrv.json"
                         trigger="loop"
                         colors="primary:#F77F00,secondary:#FFB042"
-                        style={{width:"150px",height:"150px", left:"45%", top:"25%"}}>
+                        style={{width:"150px",height:"150px"}}>
                     </lord-icon>
                 </div>
                 }>

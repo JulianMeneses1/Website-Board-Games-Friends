@@ -3,8 +3,7 @@ import { defineElement } from 'lord-icon-element';
 import { useForm } from "react-hook-form";
 import { sendEmail } from '../services/emailService';
 import Swal from "sweetalert2";
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
 
 const ContactUs = () => {
 
@@ -15,8 +14,19 @@ const ContactUs = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
 
     const watchAllFields = watch(); 
+
+    const [stopAnimationName, setStopAnimationName] = useState(false);
+    const [stopAnimationSubject, setStopAnimationSubject] = useState(false);
+    const [stopAnimationEmail, setStopAnimationEmail] = useState(false);
     
     const [isLoading, setIsLoading] = useState(false);
+
+    // para detener la animación de los iconos después de 2 seg de cargarse la página (la animación se va a producir una sola vez)
+    useEffect(()=>{
+        setTimeout(()=> {setStopAnimationName(true)}, 2600);
+        setTimeout(()=> {setStopAnimationSubject(true)}, 2020);
+        setTimeout(()=> {setStopAnimationEmail(true)}, 2020);
+    }, [])
 
     const onSubmit = (data) =>{
         setIsLoading(true);
@@ -49,61 +59,65 @@ const ContactUs = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center">Share your ideas, comments and thoughts with us!</h2>
+                <h2 className="text-center mt-2">Share your ideas, comments and thoughts with us!</h2>
                 <div className='d-flex justify-content-center'>
-                    <form onSubmit={handleSubmit(onSubmit)} className="w-50">
-                        <div className="row my-2">
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="row ">
                             <div className="col d-flex align-items-center">
-                                <span>                               
+                                <span className='pt-2'>                               
                                     <lord-icon
-                                            src="https://cdn.lordicon.com/dxjqoygy.json"
-                                            trigger="loop"
-                                            delay="750"
-                                            colors="primary:#121331,secondary:#08a88a"
-                                            style={{width:"50px",height:"50px"}}>
+                                        src="https://cdn.lordicon.com/dxjqoygy.json"
+                                        trigger={stopAnimationName ? "hover" : "loop"}
+                                        delay="500"
+                                        colors="primary:#121331,secondary:#08a88a"
+                                        style={{width:"50px",height:"50px"}}>
                                     </lord-icon>
                                 </span>                             
                                 <input
                                     type="text" 
                                     id="name" 
-                                    name="name"                    
+                                    name="name"
+                                    onFocus={() => setStopAnimationName(false)}  
+                                    onBlurCapture={() => setStopAnimationName(true)}                  
                                     {...register("name", { required: true })}
-                                    className={`form-control my-1 ${errors.name && 'is-invalid'}`}
+                                    className={`form-control ${errors.name && 'is-invalid'}`}
                                     placeholder="Name" 
-                                    maxLength="15"                                
+                                    maxLength="20"                                
                                     />                            
                             </div>
                             {errors.name?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                         </div>
-                        <div className="row my-2">
+                        <div className="row">
                             <div className="col d-flex align-items-center">
-                                <span>
+                                <span className='pt-2'>
                                     <lord-icon
                                         src="https://cdn.lordicon.com/nocovwne.json"
-                                        trigger="loop"
-                                        delay="1000"
+                                        trigger={stopAnimationSubject ? "hover" : "loop"}
+                                        delay="500"
                                         colors="primary:#121331,secondary:#08a88a"
                                         style={{width:"50px",height:"50px"}}>
                                     </lord-icon>
                                 </span>                          
                                 <input
                                     type="texto" 
-                                    id="affair" 
-                                    name="affair" 
-                                    className={`form-control my-1 ${errors.affair && 'is-invalid'}`}                                    
-                                    {...register("affair", { required: true })}
-                                    placeholder="Affair" 
+                                    id="subject" 
+                                    name="subject" 
+                                    onFocus={() => setStopAnimationSubject(false)}  
+                                    onBlurCapture={() => setStopAnimationSubject(true)} 
+                                    className={`form-control ${errors.subject && 'is-invalid'}`}                                    
+                                    {...register("subject", { required: true })}
+                                    placeholder="Subject" 
                                     maxLength="50"/>
                             </div>
-                            {errors.affair?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
+                            {errors.subject?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                         </div> 
-                        <div className="row my-2">
+                        <div className="row ">
                             <div className="col d-flex align-items-center"> 
-                                <span>
+                                <span className='pt-2'>
                                     <lord-icon
                                         src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                        trigger="loop"
-                                        delay="1000"
+                                        trigger={stopAnimationEmail ? "hover" : "loop"}
+                                        delay="500"
                                         colors="primary:#121331,secondary:#08a88a"
                                         style={{width:"50px", height:"50px"}}>
                                     </lord-icon>
@@ -114,6 +128,8 @@ const ContactUs = () => {
                                     name="email" 
                                     placeholder="Email" 
                                     maxLength="40"
+                                    onFocus={() => setStopAnimationEmail(false)}  
+                                    onBlurCapture={() => setStopAnimationEmail(true)} 
                                     className={`form-control ${watchAllFields?.email?.match(emailPattern) && 'is-valid'} ${errors.email && 'is-invalid'}`}
                                     {...register("email", { required: true, pattern: emailPattern })}                                
                                     />
@@ -141,7 +157,7 @@ const ContactUs = () => {
                                                 <div className="spinner-border text-info me-1" role="status"></div>
                                             </div>
                                         </button>
-                                    : <button type="submit" className="w-50 btn btn-lg btn-primary">Enviar</button>
+                                    : <button type="submit" className="w-50 btn btn-lg btn-primary">Send</button>
                                 }     
                             </div>                        
                         </div>                                         

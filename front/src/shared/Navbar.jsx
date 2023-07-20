@@ -30,7 +30,7 @@ export const Navbar = () => {
                         <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
                     </div>
                 </NavLink>
-                <nav className="navbar navbar-expand-lg pt-3" style={{height:"75px"}} >                
+                <nav className="navbar navbar-expand-lg pt-3 mt-1" style={{height:"75px"}} >                
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#nav" aria-controls="nav" aria-label="Toggle navigation" >

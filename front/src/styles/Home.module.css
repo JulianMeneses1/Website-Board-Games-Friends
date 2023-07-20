@@ -1,24 +1,33 @@
-.mainContainer {
+.boxContainer {
     margin-top: 2em;
-    padding: 3em;
+    padding: 3em 1.5em;
     background:  rgb(252, 236, 227);
     border-radius: 41px; 
     box-shadow: 0px 0px 10px 3px rgba(202, 174, 138, 1)
 }
 
-.textContainer{
+.textBox{
     width:70%
 }
 
-
 @media screen and (max-width: 1200px) {
-    .textContainer{
+    .textBox{
         width:85%
     }
 }
 
 @media screen and (max-width: 992px) {
-    .textContainer{
+    .textBox{
         width:100%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .textContainer {
+        display: block !important;
+    }
+    .imageContainer {
+        width: 100% !important;        
+        margin-top: 2em;
     }
 }
