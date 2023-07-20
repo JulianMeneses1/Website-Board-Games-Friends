@@ -26,7 +26,7 @@ export const Navbar = () => {
         <>
             <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
                 <NavLink to="/">
-                    <div className="d-flex justify-content-center mt-2 " style={{height:"93px"}}>
+                    <div className="d-flex justify-content-center mt-3 mb-3 " style={{height:"93px"}}>
                         <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
                     </div>
                 </NavLink>

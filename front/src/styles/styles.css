@@ -1,10 +1,14 @@
+:root {
+  --main-background-color: #fff6f2;
+}
+
 body {
   position: relative;
   padding-bottom: 15em;
-  padding-top: 220px;
+  padding-top: 240px;
   min-height: 100vh;
   font-family: MyriadPro, Lato, Helvetica;
-  background-color: #fff6f2;
+  background-color: var(--main-background-color);;
   text-align: justify;
   overflow-x: hidden;
 }
@@ -34,7 +38,7 @@ html {
 }
 
 .hide-menu{
-  transform: translateY(-185px);
+  transform: translateY(-200px);
   transition: transform 0.4s ease;
 }
 

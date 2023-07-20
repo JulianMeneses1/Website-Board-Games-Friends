@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 
@@ -12,6 +12,15 @@ const KickstarterCampaign = () => {
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
+
+  useEffect(()=> {
+    // cambiamos el color del body a white al cargarse el componente
+    document.documentElement.style.setProperty('--main-background-color', 'white');
+    // al destruirse el componente cuando se navega a otra página, cambiar el color del body al original
+    return () => {
+        document.documentElement.style.setProperty('--main-background-color', '#fff6f2');
+    }
+  }, [])
 
     return (
         <>
