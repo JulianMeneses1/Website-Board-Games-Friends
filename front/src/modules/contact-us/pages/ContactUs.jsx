@@ -32,7 +32,7 @@ const ContactUs = () => {
     const onSubmit = (data) =>{
         setIsLoading(true);
         const dataEmail = {
-            affair: data.affair,
+            subject: data.subject,
             message: `Nombre: ${data.name}
             \nMensaje: ${data.message}
             \nCorreo: ${data.email}`

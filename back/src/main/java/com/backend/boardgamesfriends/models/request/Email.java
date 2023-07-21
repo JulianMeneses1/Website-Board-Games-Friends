@@ -6,11 +6,11 @@ import lombok.Setter;
 @Getter @Setter
 public class Email {
     
-    private String affair;
+    private String subject;
     private String message;
 
-    public Email(String affair, String message) {        
-        this.affair = affair;
+    public Email(String subject, String message) {        
+        this.subject = subject;
         this.message = message;
     }
 }

@@ -24,7 +24,7 @@ public class EmailService {
             MimeMessageHelper helper = new MimeMessageHelper (message, true);
             helper.setFrom(email);
             helper.setTo(emailTo);
-            helper.setSubject(data.getAffair());
+            helper.setSubject(data.getSubject());
             helper.setText(data.getMessage());
             javaMailSender.send(message);
         } catch (Exception e) {
