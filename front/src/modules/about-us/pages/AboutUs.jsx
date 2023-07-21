@@ -4,12 +4,12 @@ const AboutUs = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-2 animate__animated animate__lightSpeedInLeft">The app designers</h2>                
-                <div className=" my-4"> 
-                    <div className="animate__animated animate__lightSpeedInLeft">
-                        <p className="text-center">Foto</p>
+                <h2 className="text-center mt-2 mb-5 animate__animated animate__lightSpeedInLeft">The app designers</h2>                
+                <div className=" my-4 animate__animated animate__lightSpeedInLeft"> 
+                    <div className="mb-5">
+                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Creadores BGF-min.jpg`}/>
                     </div>                   
-                    <div className=" animate__animated animate__lightSpeedInLeft">
+                    <div className=" ">
                         <p className='fs-5' >
                             We are an Argentinian couple living in Australia. Our professions are social communicator and UX
                             UI designer (Naty) and physicist (Fer). We have travelled and played board games in many
@@ -24,12 +24,11 @@ const AboutUs = () => {
                             in a space specially prepared for us, an app that shows only what we want to see, that would be
                             amazing!
                         </p>                  
-                        <p className='fs-5' > So we decided to design and create Board Games Friends, just for our community, with love and
+                        <p className='fs-5 mb-5' > So we decided to design and create Board Game Friends, just for our community, with love and
                             understanding of the things we care about regarding board games.
                         </p>
-                        <p className='fs-5' >Just a gift for all who enjoy spending time playing and meeting with friends.</p>
-                    </div>
-                    
+                        <p className='fs-5'><b>Just a gift for all who enjoy spending time playing and meeting with friends.</b></p>
+                    </div>                    
                 </div>
             </div>
         </>

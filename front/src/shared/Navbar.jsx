@@ -26,8 +26,8 @@ export const Navbar = () => {
         <>
             <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
                 <NavLink to="/">
-                    <div className="d-flex justify-content-center mt-3 mb-3 " style={{height:"93px"}}>
-                        <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/LogoPortada.png`}/>                   
+                    <div className="d-flex justify-content-center mt-3 mb-3 " style={{height:"80px"}}>
+                        <img src={`${import.meta.env.VITE_API_AWS_URL}/Board+Game+Friends+Logo.png`}/>                   
                     </div>
                 </NavLink>
                 <nav className="navbar navbar-expand-lg pt-3 mt-1" style={{height:"75px"}} >                

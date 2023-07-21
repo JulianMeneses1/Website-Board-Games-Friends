@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from '../services/emailService';
 import Swal from "sweetalert2";
 import { useEffect, useState } from 'react';
+import 'animate.css';
 
 const ContactUs = () => {
 
@@ -58,7 +59,7 @@ const ContactUs = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container animate__animated animate__zoomIn">
                 <h2 className="text-center mt-2">Share your ideas, comments and thoughts with us!</h2>
                 <div className='d-flex justify-content-center'>
                     <form onSubmit={handleSubmit(onSubmit)}>

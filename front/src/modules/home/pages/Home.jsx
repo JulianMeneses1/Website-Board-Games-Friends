@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>Board Games Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
+                <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>Board Game Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
                 <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"200px"}}>
                         <p>Video</p>
                     </div>
@@ -22,18 +22,20 @@ const Home = () => {
                     </div>                  
                     <div className="d-flex justify-content-center">                            
                         <div className={styles.textBox}>
-                            <p className="m-0 fs-5">As board games fans we went through all these questions and the emotions behind them.
+                            <p className="m-0 fs-5">As board game fans we went through all these questions and the emotions behind them.
                             And now we have the opportunity to change these unfulfilled expectations for memorable moments</p>
                         </div>
                     </div>
                 </div>
                 <div className={`${styles.textContainer} d-flex align-items-center mt-5 mb-3`}>
-                    <p className="align-item-center mb-0 fs-5 text-center">We feel that we need a space for us, for boardgamers. We deserve an app that lets us organize our meetings in the way we want to.
-                        Nowadays we have to find information about group meetings jumping from Facebook groups to Meet up, Discord, Whatsapp and whatever source in which you can find a clue for the next possible meeting...
-                        <br/>
-                        <b>Why should we spend so much time finding the events that we want to play when we could have a complete and single app made for us?</b>
-                    </p>
-                    <img className={`${styles.imageContainer} w-50`} src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/casa png-min.png`} />
+                    <div className="mt-5">
+                        <p className="fs-5">We feel that we need a space for us, for boardgamers. We deserve an app that lets us organize our meetings in the way we want to.</p>
+                        <p className="fs-5">Nowadays we have to find information about group meetings jumping from Facebook groups to Meet up, Discord, Whatsapp 
+                        and whatever source in which you can find a clue for the next possible meeting...</p>
+                        <p className="mb-0 fs-5"><b>Why should we spend so much time finding the events that we want to play when we could have a complete and single app made for us?</b>
+                        </p>
+                    </div>
+                    <img className={`${styles.imageContainer} w-50`} src={`${import.meta.env.VITE_API_AWS_URL}/casa png-min.png`} />
                 </div>
             </div>
         </>
