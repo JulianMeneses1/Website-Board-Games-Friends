@@ -42,7 +42,7 @@ export const Navbar = () => {
                         <div className="w-100 d-none  d-lg-flex">
                            <div>
                              <NavLink className="nav-link mb-2" to="/" style={{height:"65px"}}>       
-                                 <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`} />    
+                                 <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Logo+Botonera.png`} />    
                              </NavLink>
                            </div>
                             <ul className="navbar-nav d-flex justify-content-around align-items-center w-100 me-3">
@@ -62,7 +62,7 @@ export const Navbar = () => {
                             <div className="offcanvas-header pb-0 ps-0">                               
                                 <NavLink onClick={() =>navigate('/')} className="nav-link" data-bs-dismiss="offcanvas">
                                     <div className="d-flex justify-content-center pb-0 " style={{height:"65px"}}>
-                                        <img src={`${import.meta.env.VITE_API_AWS_URL}/imagecompressor/BGF+Logo+Botonera.png`}/>                   
+                                        <img src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Logo+Botonera.png`}/>                   
                                     </div>                                
                                 </NavLink>                              
                                 <button type="button" className="btn-close me-3" style={{fontSize: "20px"}} data-bs-dismiss="offcanvas" aria-label="Close"></button>
