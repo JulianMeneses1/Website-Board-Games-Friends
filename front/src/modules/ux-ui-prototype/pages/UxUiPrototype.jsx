@@ -5,10 +5,10 @@ const UxUiPrototype = () => {
         <>
             <div className="container">
                 <h2 className="mt-2 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2>  
-                <div className="animate__animated animate__fadeInUp">
+                <div className="animate__animated animate__fadeInUp mb-5">
                     <div className='d-flex'>
-                        <div className='mt-5'>
-                            <p className="mt-lg-4 fs-5">
+                        <div className='mt-4'>
+                            <p className="mt-lg-1 fs-5">
                                 It's been more than a year since we started working on this project. First, we gave shape to the idea to best fit the necessities we saw as board gamers players and then, 
                                 tried to convert that idea into a quality and comfortable product.                    
                             </p>  
@@ -31,7 +31,7 @@ const UxUiPrototype = () => {
                             </p>
                             <p className="fs-5 mt-5"  style={{fontStyle:"italic"}}><b>We just need to develop and use it!</b></p>
                         </div>
-                        <img className='d-lg-flex d-none w-50' src={`${import.meta.env.VITE_API_AWS_URL}/mockup pergamino recortado-min.png`}/>
+                        <img className='d-lg-flex d-none w-50' src={`${import.meta.env.VITE_API_AWS_URL}/pergamino.png`}/>
                     </div>
                 </div>
                 <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Para botón UX UI Prototype-min.png`}/>  
