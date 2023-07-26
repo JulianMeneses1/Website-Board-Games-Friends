@@ -2,7 +2,7 @@ import styles from '../styles/Footer.module.css'
 
 export const Footer = () => {
     return (   
-        <div className={styles.footer}>    
+        <footer className={styles.footer}>    
             <h5 className="text-center mb-3">Visit the campaign on 
                 <a className={styles.navLink} target="_blank" href="http://www.google.com.ar">Kickstarter!</a>
             </h5>
@@ -25,6 +25,6 @@ export const Footer = () => {
                     </a>
                 </p>
             </div>
-        </div>         
+        </footer>         
     )
 }
