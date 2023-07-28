@@ -15,6 +15,6 @@ public class EmailController {
     
     @PostMapping("/send-email")
     public void sendEmail (@RequestBody Email data) {
-        this.servicioEmail.sendEmail("boardgamefriendsapp@gmail.com",data);
+        this.servicioEmail.sendEmail("julian.meneses11@gmail.com",data);
     }
 }

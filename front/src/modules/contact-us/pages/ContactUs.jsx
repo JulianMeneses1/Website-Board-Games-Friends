@@ -5,6 +5,7 @@ import { sendEmail } from '../services/emailService';
 import Swal from "sweetalert2";
 import { useEffect, useState } from 'react';
 import 'animate.css';
+import styles from '../../../styles/ContactUs.module.css'
 
 const ContactUs = () => {
 
@@ -68,23 +69,22 @@ const ContactUs = () => {
                                 <span className='pt-2'>                               
                                     <lord-icon
                                         src="https://cdn.lordicon.com/dxjqoygy.json"
-                                        trigger={stopAnimationName ? "hover" : "loop"}
-                                        delay="500"
+                                        trigger={stopAnimationName ? "click" : "loop"}
+                                        delay="500"                                        
                                         colors="primary:#121331,secondary:#08a88a"
-                                        style={{width:"50px",height:"50px"}}>
+                                        style={{width:"50px",height:"50px", position: "relative"}}>
+                                            <input
+                                                type="text" 
+                                                id="name" 
+                                                name="name"                       
+                                                {...register("name", { required: true })}
+                                                className={`form-control ${errors.name && 'is-invalid'} ${styles.input}`}
+                                                placeholder="Name" 
+                                                maxLength="20"                                
+                                            />           
                                     </lord-icon>
                                 </span>                             
-                                <input
-                                    type="text" 
-                                    id="name" 
-                                    name="name"
-                                    onFocus={() => setStopAnimationName(false)}  
-                                    onBlurCapture={() => setStopAnimationName(true)}                  
-                                    {...register("name", { required: true })}
-                                    className={`form-control ${errors.name && 'is-invalid'}`}
-                                    placeholder="Name" 
-                                    maxLength="20"                                
-                                    />                            
+                                                 
                             </div>
                             {errors.name?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                         </div>
@@ -93,47 +93,46 @@ const ContactUs = () => {
                                 <span className='pt-2'>
                                     <lord-icon
                                         src="https://cdn.lordicon.com/nocovwne.json"
-                                        trigger={stopAnimationSubject ? "hover" : "loop"}
+                                        trigger={stopAnimationSubject ? "click" : "loop"}
                                         delay="500"
                                         colors="primary:#121331,secondary:#08a88a"
                                         style={{width:"50px",height:"50px"}}>
+                                              <input
+                                                type="texto" 
+                                                id="subject" 
+                                                name="subject" 
+                                                className={`form-control ${errors.subject && 'is-invalid'} ${styles.input}`}                                    
+                                                {...register("subject", { required: true })}
+                                                placeholder="Subject" 
+                                                maxLength="50"
+                                            />
                                     </lord-icon>
                                 </span>                          
-                                <input
-                                    type="texto" 
-                                    id="subject" 
-                                    name="subject" 
-                                    onFocus={() => setStopAnimationSubject(false)}  
-                                    onBlurCapture={() => setStopAnimationSubject(true)} 
-                                    className={`form-control ${errors.subject && 'is-invalid'}`}                                    
-                                    {...register("subject", { required: true })}
-                                    placeholder="Subject" 
-                                    maxLength="50"/>
+                              
                             </div>
                             {errors.subject?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                         </div> 
                         <div className="row ">
-                            <div className="col d-flex align-items-center"> 
-                                <span className='pt-2'>
+                            <div className="col d-flex align-items-center" style={{position:"relative"}}> 
+                                <span className='pt-2' style={{position:"relative"}}>
                                     <lord-icon
                                         src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                        trigger={stopAnimationEmail ? "hover" : "loop"}
+                                        trigger={stopAnimationEmail ? "click" : "loop"}
                                         delay="500"
                                         colors="primary:#121331,secondary:#08a88a"
                                         style={{width:"50px", height:"50px"}}>
+                                             <input
+                                                type="text" 
+                                                id="email" 
+                                                name="email" 
+                                                placeholder="Email" 
+                                                maxLength="40"
+                                                className={`form-control ${watchAllFields?.email?.match(emailPattern) && 'is-valid'} ${errors.email && 'is-invalid'} ${styles.input}`}
+                                                {...register("email", { required: true, pattern: emailPattern })}                                
+                                            />
                                     </lord-icon>
                                 </span>                           
-                                <input
-                                    type="text" 
-                                    id="email" 
-                                    name="email" 
-                                    placeholder="Email" 
-                                    maxLength="40"
-                                    onFocus={() => setStopAnimationEmail(false)}  
-                                    onBlurCapture={() => setStopAnimationEmail(true)} 
-                                    className={`form-control ${watchAllFields?.email?.match(emailPattern) && 'is-valid'} ${errors.email && 'is-invalid'}`}
-                                    {...register("email", { required: true, pattern: emailPattern })}                                
-                                    />
+                               
                             </div>
                             {errors.email?.type === 'required' && <p className="text-danger mb-0">This field is required</p>}                                            
                             {errors.email?.type === 'pattern' && <p className="text-danger mb-0">The email entered is invalid</p>}                         
