@@ -1,12 +1,12 @@
 HELP.md
-target/
+
 src/main/resources/application.properties
 target/classes/application.properties
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 ec2-backend.pem
-ssh-oracle.key
+
 
 ### STS ###
 .apt_generated

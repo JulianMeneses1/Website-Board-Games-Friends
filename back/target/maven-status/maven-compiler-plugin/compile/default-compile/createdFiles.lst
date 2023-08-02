@@ -1,0 +1,6 @@
+com\backend\boardgamesfriends\security\CorsConfig.class
+com\backend\boardgamesfriends\models\request\Email.class
+com\backend\boardgamesfriends\services\EmailService.class
+com\backend\boardgamesfriends\controllers\EmailController.class
+com\backend\boardgamesfriends\security\CorsConfig$1.class
+com\backend\boardgamesfriends\BoardgamesfriendsApplication.class
