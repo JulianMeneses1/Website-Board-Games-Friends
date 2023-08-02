@@ -4,7 +4,8 @@ const UxUiPrototype = () => {
     return (
         <>
             <div className="container">
-                <h2 className="mt-2 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2>  
+                <h2 className="text-center"> A new friendly project coming soon on Kickstarter</h2>
+                {/* <h2 className="mt-2 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2>  
                 <div className="animate__animated animate__fadeInUp mb-5">
                     <div className='d-flex'>
                         <div className='mt-4'>
@@ -34,7 +35,7 @@ const UxUiPrototype = () => {
                         <img className='d-lg-flex d-none w-50' src={`${import.meta.env.VITE_API_AWS_URL}/pergamino.png`}/>
                     </div>
                 </div>
-                <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Para botón UX UI Prototype-min.png`}/>  
+                <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Para botón UX UI Prototype-min.png`}/>   */}
             </div>
         </>
     )

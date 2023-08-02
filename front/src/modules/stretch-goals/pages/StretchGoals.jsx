@@ -4,7 +4,9 @@ const StretchGoals = () => {
     return (
         <>
             <div className="container ">
-                <h2 className="text-center mt-2 mb-4 animate__animated animate__rollIn">Help us reaching the stretch goals to improve even more the app functionalities! </h2>
+                
+                <h2 className="text-center"> A new friendly project coming soon on Kickstarter</h2>
+                {/* <h2 className="text-center mt-2 mb-4 animate__animated animate__rollIn">Help us reaching the stretch goals to improve even more the app functionalities! </h2>
                 <div className="animate__animated animate__rollIn">
                     <h5>Synchronized calendar</h5>
                     <p className="mt-3 fs-5">
@@ -44,7 +46,7 @@ const StretchGoals = () => {
                     <p className="fs-5 mt-5">Our main goal is to create an app that fulfils the expectations of the board gamers. As we are board game lovers and players as well, 
                         this project aims for continuous expansion, reaching as many countries as possible. 
                         Because all board gamers and people who don't play yet should have the opportunity to share great moments.</p>
-                </div>                
+                </div>                 */}
             </div>
         </>
     )
