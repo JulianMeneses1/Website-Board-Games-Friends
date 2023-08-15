@@ -6,9 +6,8 @@ const Home = () => {
         <>
             <div className="container">
                 <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>Board Game Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
-                <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"200px"}}>
-                        <p>Video</p>
-                    </div>
+                <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"100px"}}>
+                </div>
                 <div className={styles.boxContainer}>
                     <h2 className="text-center mb-4">Be part of this playful community!</h2>                   
                     <div className="d-flex justify-content-center">
