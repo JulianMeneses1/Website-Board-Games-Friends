@@ -52,6 +52,7 @@ export const Navbar = () => {
                                 <li><NavLink className="nav-link" to="ux-ui-prototype">UX UI Prototype</NavLink></li>
                                 <li><NavLink className="nav-link" to="stretch-goals">Stretch Goals</NavLink></li>
                                 <li><NavLink className="nav-link" to="faq">FAQ</NavLink></li>
+                                <li><NavLink className="nav-link" to="media-resources">Media Resources</NavLink></li>
                                 <li><NavLink className="nav-link" to="contact-us">Contact us</NavLink></li>                                 
                             </ul>                     
                         </div>        
@@ -75,6 +76,7 @@ export const Navbar = () => {
                                     <li><NavLink onClick={() =>navigate('ux-ui-prototype')} className="nav-link  my-2" data-bs-dismiss="offcanvas">UX UI Prototype</NavLink></li>
                                     <li><NavLink onClick={() =>navigate('stretch-goals')} className="nav-link  my-2" data-bs-dismiss="offcanvas">Stretch Goals</NavLink></li>
                                     <li><NavLink onClick={() =>navigate('faq')} className="nav-link  my-2" data-bs-dismiss="offcanvas">FAQ</NavLink></li> 
+                                    <li><NavLink onClick={() =>navigate('media-resources')} className="nav-link  my-2" data-bs-dismiss="offcanvas">Media Resources</NavLink></li> 
                                     <li><NavLink onClick={() =>navigate('contact-us')} className="nav-link  my-2" data-bs-dismiss="offcanvas">Contact us</NavLink></li> 
                                 </ul>
                             </div>

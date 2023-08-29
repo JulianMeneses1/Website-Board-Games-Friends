@@ -12,6 +12,7 @@ const ContactUs = lazy(()=>import('../modules/contact-us/pages/ContactUs'))
 const StretchGoals = lazy(()=>import('../modules/stretch-goals/pages/StretchGoals'))
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
+import MediaResources from "../modules/media-resources/pages/MediaResources"
 
 export const AppRoutes = () => {
     { defineElement(lottie.loadAnimation)}
@@ -39,6 +40,7 @@ export const AppRoutes = () => {
                     <Route path='/ux-ui-prototype' element={ <UxUiPrototype/> } />
                     <Route path='/stretch-goals' element={ <StretchGoals/> } />
                     <Route path='/faq' element={ <FAQ/> } />
+                    <Route path='/media-resources' element={ <MediaResources/> } />
                     <Route path='/contact-us' element={ <ContactUs/> } />   
                          
                 </Routes>

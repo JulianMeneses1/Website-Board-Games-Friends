@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>Board Game Friends is a community platform to coordinate face-to-face board games meetings </b></h2>
+                <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>A community platform to coordinate in-person board game meetings in North America, Europe, Australia and New Zealand </b></h2>
                 <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"100px"}}>
                 </div>
                 <div className={styles.boxContainer}>
