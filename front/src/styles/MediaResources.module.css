@@ -1,0 +1,6 @@
+@media screen and (max-width: 770px) {
+    .downloadIconContainer {
+      width: 100%;
+      text-align: center;
+    }
+}

@@ -30,7 +30,7 @@ export const Navbar = () => {
                         <img src={`${import.meta.env.VITE_API_AWS_URL}/Board+Game+Friends+Logo.png`}/>                   
                     </div>
                 </NavLink>
-                <nav className="navbar navbar-expand-lg pt-3 mt-1" style={{height:"75px"}} >                
+                <nav className="navbar navbar-expand-xl pt-3 mt-1" style={{height:"75px"}} >                
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#nav" aria-controls="nav" aria-label="Toggle navigation" >
@@ -39,7 +39,7 @@ export const Navbar = () => {
 
                         {/* NAVBAR EXPANDIDO */}                       
                         
-                        <div className="w-100 d-none  d-lg-flex">
+                        <div className="w-100 d-none d-xl-flex">
                            <div>
                              <NavLink className="nav-link mb-2" to="/" style={{height:"65px"}}>       
                                  <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Logo+Botonera.png`} />    
@@ -59,7 +59,7 @@ export const Navbar = () => {
 
                         {/* NAVBAR COLAPSADO */}
                 
-                        <div className="offcanvas offcanvas-start d-lg-none" tabIndex="-1" id="nav" aria-labelledby="navLabel">
+                        <div className="offcanvas offcanvas-start d-xl-none" tabIndex="-1" id="nav" aria-labelledby="navLabel">
                             <div className="offcanvas-header pb-0 ps-0">                               
                                 <NavLink onClick={() =>navigate('/')} className="nav-link" data-bs-dismiss="offcanvas">
                                     <div className="d-flex justify-content-center pb-0 " style={{height:"65px"}}>
