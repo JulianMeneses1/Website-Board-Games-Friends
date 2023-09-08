@@ -5,8 +5,11 @@ const Home = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-3 animate__animated animate__zoomIn"><b>A community platform to coordinate in-person board game meetings in North America, Europe, Australia and New Zealand </b></h2>
-                <div className="my-5 d-flex justify-content-center align-items-center" style={{height:"100px"}}>
+                <h2 className="text-center mt-2 animate__animated animate__zoomIn"><b>A community platform to coordinate in-person board game meetings in North America, Europe, Australia and New Zealand </b></h2>
+                <div className={styles.videoContainer}>
+                    <video controls width="100%" height="100%">
+                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.mp4`}/>
+                    </video>
                 </div>
                 <div className={styles.boxContainer}>
                     <h2 className="text-center mb-4">Be part of this playful community!</h2>                   
@@ -34,7 +37,7 @@ const Home = () => {
                         <p className="mb-0 fs-5"><b>Why should we spend so much time finding the events that we want to play when we could have a complete and single app made for us?</b>
                         </p>
                     </div>
-                    <img className={`${styles.imageContainer} w-50`} src={`${import.meta.env.VITE_API_AWS_URL}/casa png-min.png`} />
+                    <img className={`${styles.imageContainer} w-50`} src={`${import.meta.env.VITE_API_AWS_URL}/others/casa png-min.png`} />
                 </div>
             </div>
         </>

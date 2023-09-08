@@ -3,7 +3,7 @@ import styles from '../styles/Footer.module.css'
 export const Footer = () => {
     return (   
         <footer className={styles.footer}>    
-            <h5 className="text-center mb-3">Coming soon on 
+            <h5 className="text-center mb-3">Support this friendly project on 
                 <a className={styles.navLink} href="https://www.kickstarter.com/projects/boardgamefriends/board-game-friends-app" target="_blank">Kickstarter!</a>
             </h5>
             <div className="d-flex mb-4 gap-3 justify-content-center">

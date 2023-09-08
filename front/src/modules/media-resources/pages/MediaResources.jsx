@@ -19,11 +19,11 @@ const MediaResources = () => {
 
     return (
         <>
-            <div className="container animate__animated animate__lightSpeedInRight">
+            <div className="container animate__animated animate__bounceInDown">
                 <h2 className="mb-4 mt-2 text-center "> Spread the Word: Shareable Resources of this Friendly Project</h2>
                 <div className='mt-5'>
-                    <h5><b>Board Game Friends hits Kickstarter: A mobile app to bring players together</b></h5>
-                    <div className='d-flex align-items-center gap-3 flex-wrap-reverse '>
+                    <h5 className='text-center'><b>Board Game Friends hits Kickstarter: A mobile app to bring players together</b></h5>
+                    <div className='d-flex align-items-center gap-3 flex-wrap-reverse justify-content-center'>
                         <a download href="./BoardGamesFriendshitsKickstarterAmobileapptobringplayerstogether.pdf">Board Games Friends hits Kickstarter A mobile app to bring players together.pdf</a>
                         <div className={styles.downloadIconContainer}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
@@ -32,7 +32,7 @@ const MediaResources = () => {
                             </svg>
                         </div>
                     </div>
-                    <div className='mb-4 mt-3 d-flex align-items-center gap-1'>
+                    <div className='mb-4 mt-3 d-flex align-items-center justify-content-center gap-1'>
                         <h5 className='mb-0 me-2'>Share</h5>
                         <CopyToClipboard text="https://dyj0wea98zx9n.cloudfront.net/downloads/BoardGamesFriendshitsKickstarterAmobileapptobringplayerstogether.pdf">
                             <svg style={{ cursor: 'pointer' }} onClick={() => toast.success('Link Copied', { duration: 1500 })} xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" className="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -57,8 +57,8 @@ const MediaResources = () => {
                             <WhatsappIcon size="40" />
                         </WhatsappShareButton>
                     </div>
-                    <h5><b>Board Game Friends app Brand Assets</b></h5>
-                    <div className='d-flex align-items-center gap-3 flex-wrap-reverse'>
+                    <h5 className='text-center'><b>Board Game Friends app Brand Assets</b></h5>
+                    <div className='d-flex align-items-center gap-3 flex-wrap-reverse justify-content-center'>
                         <a download href="./BoardGameFriendsBrandAssets.zip">Board Game Friends BrandAssets.zip</a>
                         <div className={styles.downloadIconContainer}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@ const MediaResources = () => {
                             </svg>
                         </div>
                     </div>
-                    <div className='mb-4 mt-3 d-flex align-items-center gap-1'>
+                    <div className='mb-4 mt-3 d-flex align-items-center gap-1 justify-content-center'>
                         <h5 className='mb-0 me-2'>Share</h5>
                         <CopyToClipboard text="https://dyj0wea98zx9n.cloudfront.net/downloads/BoardGameFriendsBrandAssets.zip">
                             <svg style={{ cursor: 'pointer' }} onClick={() => toast.success('Link Copied', { duration: 1500 })} xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" className="bi bi-link-45deg" viewBox="0 0 16 16">

@@ -4,8 +4,7 @@ const StretchGoals = () => {
     return (
         <>
             <div className="container ">
-                
-                <h2 className="text-center"> A new friendly project coming soon on Kickstarter</h2>
+                <img className="w-100 animate__animated animate__rollIn" src={`${import.meta.env.VITE_API_AWS_URL}/stretch goals/BGF KS-12.png`}/>
                 {/* <h2 className="text-center mt-2 mb-4 animate__animated animate__rollIn">Help us reaching the stretch goals to improve even more the app functionalities! </h2>
                 <div className="animate__animated animate__rollIn">
                     <h5>Synchronized calendar</h5>

@@ -4,8 +4,8 @@ const AboutUs = () => {
     return (
         <>
             <div className="container">
-                <h2 className="text-center mt-2 mb-5 animate__animated animate__lightSpeedInLeft">The app designers</h2>                
-                <div className=" my-4 animate__animated animate__lightSpeedInLeft"> 
+                <h2 className="text-center mt-2 mb-5 animate__animated animate__slideInUp">The app designers</h2>                
+                <div className=" my-4 animate__animated animate__slideInUp"> 
                     <div className="mb-5">
                         <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Creadores BGF-min.jpg`}/>
                     </div>                   

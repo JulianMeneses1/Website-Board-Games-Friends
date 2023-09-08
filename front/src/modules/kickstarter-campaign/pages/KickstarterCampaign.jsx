@@ -25,10 +25,7 @@ const KickstarterCampaign = () => {
     return (
         <>
             <div className="container">
-
-                <h2 className="text-center"> A new friendly project coming soon on Kickstarter</h2>
-
-                {/* {!imageLoaded && (
+                {!imageLoaded && (
                     <>
                         <div className="d-flex justify-content-center align-items-center" style={{height:"60vh"}} >
                             <lord-icon
@@ -154,7 +151,7 @@ const KickstarterCampaign = () => {
                 </div>
                 <div className="d-flex justify-content-center"> 
                     <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Kickstarter+Campaign+Agosto+2023-14.png`}/> 
-                </div> */}
+                </div> 
             </div>
         </>
     )
