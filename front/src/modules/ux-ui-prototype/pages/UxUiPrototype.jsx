@@ -4,8 +4,13 @@ const UxUiPrototype = () => {
     return (
         <>
             <div className="container">
-                <h2 className="mt-2 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2>  
-                <div className="animate__animated animate__fadeInUp mb-5">
+                <h2 className="mt-2 mb-5 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2> 
+                <video className='animate__animated animate__fadeInUp' controls width="100%" height="100%">
+                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.mp4`} type="video/mp4"/>
+                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.webm`} type="video/webm"/>
+                        <p>Your browser does not support the video tag, try to update your browser.</p>
+                </video>   
+                <div className="animate__animated animate__fadeInUp mt-5">
                     <div className='d-flex'>
                         <div className='mt-4'>
                             <p className="mt-lg-1 fs-5">
@@ -34,10 +39,7 @@ const UxUiPrototype = () => {
                         </div>
                         <img className='d-lg-flex d-none w-50' src={`${import.meta.env.VITE_API_AWS_URL}/pergamino.png`}/>
                     </div>
-                </div>
-                <video controls width="100%" height="100%">
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ux ui/BGF KS-09.mp4`}/>
-                </video> 
+                </div>                
             </div>
         </>
     )

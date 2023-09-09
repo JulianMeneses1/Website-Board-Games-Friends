@@ -14,12 +14,12 @@ const Home = () => {
                 <div className={styles.boxContainer}>
                     <h2 className="text-center mb-4">Be part of this playful community!</h2>                   
                     <div className="d-flex justify-content-center">
-                        <ul>
-                            <li className="fs-5">Can't you coordinate a spot to play with your regular group of friends?</li>
-                            <li className="fs-5">Are you moving to a new neighbourhood or city and want to play with people around?</li>
-                            <li className="fs-5">Do you have a space at your home to share while playing board games?</li>
-                            <li className="fs-5">Do you want to start a board game campaign and need friends to play it regularly?</li>
-                            <li className="fs-5">Do you prefer not to own many games but join other players and enjoy their collections?</li>
+                        <ul className="custom-list">
+                            <li className="fs-5 impar">Can't you coordinate a spot to play with your regular group of friends?</li>
+                            <li className="fs-5 par">Are you moving to a new neighbourhood or city and want to play with people around?</li>
+                            <li className="fs-5 impar">Do you have a space at your home to share while playing board games?</li>
+                            <li className="fs-5 par">Do you want to start a board game campaign and need friends to play it regularly?</li>
+                            <li className="fs-5 impar">Do you prefer not to own many games but join other players and enjoy their collections?</li>
                         </ul>
                     </div>                  
                     <div className="d-flex justify-content-center">                            

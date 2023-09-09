@@ -46,8 +46,7 @@ const FAQ = () => {
                     <p>Yes, you can pledge worldwide! BGF app is intended to work in every place 
                         as long as there are people to play. We really encourage people from different 
                         places and cultures to join the project, 
-                        that will make the board game network more diverse and full of opportunities. Please, read the full guide for multiple ways of pay options 
-                        <a href="https://boardgamefriendsapp.com/ways-to-back-this-project"> here</a>.</p>
+                        that will make the board game network more diverse and full of opportunities. Please, read the full guide for multiple ways of pay options <a href="https://boardgamefriendsapp.com/ways-to-back-this-project">here</a>.</p>
 
                     <h5 className="fs-5"><b>Can I back multiple rewards levels?</b></h5>
                     <p>Unfortunately, Kickstarter only allows backers to support 1 reward level. However, upon selecting your desired pledge, 

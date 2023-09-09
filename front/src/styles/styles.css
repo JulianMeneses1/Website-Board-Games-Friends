@@ -103,5 +103,32 @@ form {
   }  
 }
 
+/* Colores personalizados li */
+
+.custom-list {
+  list-style: none; 
+}
+
+.custom-list li::before {
+  content: "\2022";
+
+  display: inline-block; 
+
+  font-size: 2rem;
+    
+  width: 1em; 
+
+  margin-left: -0.9em; 
+}
+
+.impar::before {  
+  color: orange; 
+}
+
+.par::before {        
+  color: blue;  
+}
+
+
 
 
