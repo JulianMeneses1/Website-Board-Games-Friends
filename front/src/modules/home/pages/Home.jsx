@@ -8,7 +8,9 @@ const Home = () => {
                 <h2 className="text-center mt-2 animate__animated animate__zoomIn"><b>A community platform to coordinate in-person board game meetings in North America, Europe, Australia and New Zealand </b></h2>
                 <div className={styles.videoContainer}>
                     <video controls width="100%" height="100%">
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.mp4`}/>
+                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.mp4`} type="video/mp4"/>
+                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.webm`} type="video/webm"/>
+                        <p>Your browser does not support the video tag, try to update your browser.</p>
                     </video>
                 </div>
                 <div className={styles.boxContainer}>
