@@ -11,6 +11,13 @@
     height:400px
 }
 
+.demoContainer {
+    margin: 5em 0 5em 0;
+    height:600px;
+    display: flex;
+    justify-content: center; 
+}
+
 .textBox{
     width:70%
 }

@@ -13,6 +13,9 @@ const Home = () => {
                         <p>Your browser does not support the video tag, try to update your browser.</p>
                     </video>
                 </div>
+                <div className={styles.demoContainer} >
+                    <iframe height="600" src="https://xd.adobe.com/embed/08ffdb71-3370-46e1-a223-0c32ef51a0ab-5dac/?fullscreen" allowFullScreen></iframe>
+                </div>                
                 <div className={styles.boxContainer}>
                     <h2 className="text-center mb-4">Be part of this playful community!</h2>                   
                     <div className="d-flex justify-content-center">
