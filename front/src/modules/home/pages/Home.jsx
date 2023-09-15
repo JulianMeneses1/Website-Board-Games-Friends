@@ -13,6 +13,26 @@ const Home = () => {
                         <p>Your browser does not support the video tag, try to update your browser.</p>
                     </video>
                 </div>
+                <div className="text-center mt-5">
+                    <h3 className="mb-4"><b>BGF app demo!</b></h3>
+                    <p>
+                        The aim of this demo is to demonstrate the general look and some functionalities of the app.
+                    </p>
+                    <p>
+                        You will be able to navigate some sections of the Board Game Friends App, exploring some of their options. 
+                        The UX/UI design has a complex interconnectivity between buttons, screens, and functions, as you can see in the “A UX/UI experience”
+                        section on this webpage, where a short video displays more than 300 interconnected screens. 
+                    </p>
+                    <p>
+                        This demo is a reduced and adapted circuit of that design, serving as a preview of what the fully developed app will look like.
+                    </p>
+                    <p>
+                        We hope you enjoy it!
+                    </p>
+                    <p>
+                        Click on the image to experience the demo app 👇
+                    </p>
+                </div>
                 <div className={styles.demoContainer} >
                     <iframe height="600" src="https://xd.adobe.com/embed/08ffdb71-3370-46e1-a223-0c32ef51a0ab-5dac/?fullscreen" allowFullScreen></iframe>
                 </div>                
