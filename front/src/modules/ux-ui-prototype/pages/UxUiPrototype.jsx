@@ -1,4 +1,7 @@
 import 'animate.css';
+import KS09mp4 from '../../../assets/ux ui/BGF KS-09.mp4';
+import KS09webm from '../../../assets/ux ui/BGF-KS-09.webm';
+import pergamino from '../../../assets/pergamino.png';
 
 const UxUiPrototype = () => {
     return (
@@ -6,8 +9,8 @@ const UxUiPrototype = () => {
             <div className="container">
                 <h2 className="mt-2 mb-5 animate__animated animate__fadeInUp text-center">A UX UI Experience</h2> 
                 <video className='animate__animated animate__fadeInUp' controls width="100%" height="100%">
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.mp4`} type="video/mp4"/>
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.webm`} type="video/webm"/>
+                        <source src={KS09mp4} type="video/mp4"/>
+                        <source src={KS09webm} type="video/webm"/>
                         <p>Your browser does not support the video tag, try to update your browser.</p>
                 </video>   
                 <div className="animate__animated animate__fadeInUp mt-5">
@@ -37,7 +40,7 @@ const UxUiPrototype = () => {
                             </p>
                             <p className="fs-5"><b>We just need to develop and use it!</b></p>
                         </div>
-                        <img className='d-lg-flex d-none w-50' src={`${import.meta.env.VITE_API_AWS_URL}/pergamino.png`}/>
+                        <img className='d-lg-flex d-none w-50' src={pergamino}/>
                     </div>
                 </div>                
             </div>

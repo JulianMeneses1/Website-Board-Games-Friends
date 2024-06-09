@@ -1,5 +1,8 @@
 import styles from "../../../styles/Home.module.css";
 import 'animate.css';
+import videoPresentacionmp4 from '../../../assets/home/video presentacion.mp4';
+import videoPresentacionwebm from '../../../assets/home/video-presentacion.webm';
+import casa from '../../../assets/others/casa png-min.png';
 
 const Home = () => {
     return (
@@ -8,8 +11,8 @@ const Home = () => {
                 <h2 className="text-center mt-2 animate__animated animate__zoomIn"><b>A community platform to coordinate in-person board game meetings in North America, Europe, Australia and New Zealand </b></h2>
                 <div className={styles.videoContainer}>
                     <video controls width="100%" height="100%">
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.mp4`} type="video/mp4"/>
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/home/video presentacion.webm`} type="video/webm"/>
+                        <source src={videoPresentacionmp4} type="video/mp4"/>
+                        <source src={videoPresentacionwebm} type="video/webm"/>
                         <p>Your browser does not support the video tag, try to update your browser.</p>
                     </video>
                 </div>
@@ -62,7 +65,7 @@ const Home = () => {
                         <p className="mb-0 fs-5"><b>Why should we spend so much time finding the events that we want to play when we could have a complete and single app made for us?</b>
                         </p>
                     </div>
-                    <img className={`${styles.imageContainer} w-50`} src={`${import.meta.env.VITE_API_AWS_URL}/others/casa png-min.png`} />
+                    <img className={`${styles.imageContainer} w-50`} src={casa} />
                 </div>
             </div>
         </>

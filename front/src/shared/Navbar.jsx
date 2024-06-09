@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"
+import logo from '../assets/Board Game Friends Logo.png';
+import logoBotonera from '../assets/BGF Logo Botonera.png';
 
 export const Navbar = () => {
 
@@ -27,7 +29,7 @@ export const Navbar = () => {
             <header className={` fixed-top ${showMenu ? 'show-menu' : 'hide-menu'}`}>
                 <NavLink to="/">
                     <div className="d-flex justify-content-center mt-3 mb-3 " style={{height:"80px"}}>
-                        <img src={`${import.meta.env.VITE_API_AWS_URL}/Board+Game+Friends+Logo.png`}/>                   
+                        <img src={logo}/>                   
                     </div>
                 </NavLink>
                 <nav className="navbar navbar-expand-xl pt-3 mt-1" style={{height:"75px"}} >                
@@ -42,7 +44,7 @@ export const Navbar = () => {
                         <div className="w-100 d-none d-xl-flex">
                            <div>
                              <NavLink className="nav-link mb-2" to="/" style={{height:"65px"}}>       
-                                 <img className="w-100 h-100"  src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Logo+Botonera.png`} />    
+                                 <img className="w-100 h-100"  src={logoBotonera} />    
                              </NavLink>
                            </div>
                             <ul className="navbar-nav d-flex justify-content-around align-items-center w-100 me-3">
@@ -63,7 +65,7 @@ export const Navbar = () => {
                             <div className="offcanvas-header pb-0 ps-0">                               
                                 <NavLink onClick={() =>navigate('/')} className="nav-link" data-bs-dismiss="offcanvas">
                                     <div className="d-flex justify-content-center pb-0 " style={{height:"65px"}}>
-                                        <img src={`${import.meta.env.VITE_API_AWS_URL}/BGF+Logo+Botonera.png`}/>                   
+                                        <img src={logoBotonera}/>                   
                                     </div>                                
                                 </NavLink>                              
                                 <button type="button" className="btn-close me-3" style={{fontSize: "20px"}} data-bs-dismiss="offcanvas" aria-label="Close"></button>

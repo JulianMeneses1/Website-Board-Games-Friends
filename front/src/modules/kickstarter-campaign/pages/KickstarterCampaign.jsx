@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
+import BGFKS01 from '../../../assets/ks campaign/BGF KS-01.png';
+import BGFKS02 from '../../../assets/ks campaign/BGF KS-02.png';
+import BGFKS04 from '../../../assets/ks campaign/BGF KS-04.png';
+import BGFKS05 from '../../../assets/ks campaign/BGF KS-05.png';
+import BGFKS06 from '../../../assets/ks campaign/BGF KS-06.png';
+import BGFKS07 from '../../../assets/ks campaign/BGF KS-07.png';
+import BGFKS09mp4 from '../../../assets/ux ui/BGF KS-09.mp4';
+import BGFKS09webm from '../../../assets/ux ui/BGF-KS-09.webm';
+import BGFKS10 from '../../../assets/ks campaign/BGF KS-10.png';
+import BGFKS11 from '../../../assets/ks campaign/BGF KS-11 Foto Creadores.jpg';
+import BGFKS12 from '../../../assets/ks campaign/BGF KS-12.png';
+import BGFKS14 from '../../../assets/ks campaign/BGF KS-14.png';
 
 
 const KickstarterCampaign = () => {
@@ -42,13 +54,13 @@ const KickstarterCampaign = () => {
                     <div className="d-flex justify-content-center">
                         <img
                             className="w-100"
-                            src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-01.png`}
+                            src={BGFKS01}
                             onLoad={handleImageLoad}
                         />
                     </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-02.png`} />
+                    <img className="w-100" src={BGFKS02} />
                 </div>
                 <div style={{ marginBottom: "5em" }}>
                     <h3 className=" mt-5 mb-4"><b>Be part of this playful community!</b></h3>
@@ -68,16 +80,16 @@ const KickstarterCampaign = () => {
                 </div>
                 <div>
                     <div className="d-flex justify-content-center">
-                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-04.png`} />
+                        <img className="w-100" src={BGFKS04} />
                     </div>
                     <div className="d-flex justify-content-center">
-                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-05.png`} />
+                        <img className="w-100" src={BGFKS05} />
                     </div>
                     <div className="d-flex justify-content-center">
-                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-06.png`} />
+                        <img className="w-100" src={BGFKS06} />
                     </div>
                     <div className="d-flex justify-content-center">
-                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-07.png`} />
+                        <img className="w-100" src={BGFKS07} />
                     </div>
                 </div>
                 <h3 className="mt-5 mb-4"><b>A UX UI Experience</b></h3>
@@ -109,17 +121,17 @@ const KickstarterCampaign = () => {
 
                 <div className="my-5">
                     <video controls width="100%" height="100%">
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.mp4`} type="video/mp4" />
-                        <source src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-09.webm`} type="video/webm" />
+                        <source src={BGFKS09mp4} type="video/mp4" />
+                        <source src={BGFKS09webm} type="video/webm" />
                         <p>Your browser does not support the video tag, try to update your browser.</p>
                     </video>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-10.png`} />
+                    <img className="w-100" src={BGFKS10} />
                 </div>
                 <h2 className="my-5"><b>Who we are</b></h2>
                 <div className="d-flex justify-content-center">
-                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-11 Foto Creadores.jpg`} />
+                    <img className="w-100" src={BGFKS11} />
                 </div>
                 <div className="mt-4">
                     <p className="fs-5">
@@ -140,7 +152,7 @@ const KickstarterCampaign = () => {
                     <p className='fs-5'><i>Just a gift for all who enjoy spending time playing and meeting with friends.</i></p>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-12.png`} />
+                    <img className="w-100" src={BGFKS12} />
                 </div>
                 <div className="my-5">
                     <h2 className="my-5"><b>We think bigger!</b></h2>
@@ -158,7 +170,7 @@ const KickstarterCampaign = () => {
                     </p>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/ks campaign/BGF KS-14.png`} />
+                    <img className="w-100" src={BGFKS14} />
                 </div>
                 <div>
                     <h2 className="my-5"><b>Risks and challenges</b></h2>

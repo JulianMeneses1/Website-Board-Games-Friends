@@ -1,4 +1,5 @@
 import 'animate.css';
+import Creadores from '../../../assets/Creadores BGF-min.jpg';
 
 const AboutUs = () => {
     return (
@@ -7,7 +8,7 @@ const AboutUs = () => {
                 <h2 className="text-center mt-2 mb-5 animate__animated animate__slideInUp">The app designers</h2>                
                 <div className=" my-4 animate__animated animate__slideInUp"> 
                     <div className="mb-5">
-                        <img className="w-100" src={`${import.meta.env.VITE_API_AWS_URL}/Creadores BGF-min.jpg`}/>
+                        <img className="w-100" src={Creadores}/>
                     </div>                   
                     <div className=" ">
                         <p className='fs-5' >
